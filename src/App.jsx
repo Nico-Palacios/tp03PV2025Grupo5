@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Tarea } from './assets/components/Tarea.jsx'
+import { Productos } from "./assets/components/Productos.jsx";
 
 function App() {
   const [valueSelect, setValueSelect] = useState('Tarea')
@@ -11,7 +12,7 @@ function App() {
           Lista de tareas
         </button>
         /
-        <button onClick={() => setValueSelect('Producto')}  >
+        <button onClick={() => setValueSelect('Productos')}  >
           Lista de productos
         </button>
       </div>

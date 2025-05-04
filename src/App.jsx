@@ -7,13 +7,13 @@ function App() {
   return (
     <>
       <div >
-        <span onClick={() => setValueSelect('Tarea')}  >
+        <button onClick={() => setValueSelect('Tarea')}  >
           Lista de tareas
-        </span>
+        </button>
         /
-        <span onClick={() => setValueSelect('Producto')}  >
+        <button onClick={() => setValueSelect('Producto')}  >
           Lista de productos
-        </span>
+        </button>
       </div>
       {valueSelect === "Tarea" ? (
         <Tarea></Tarea>

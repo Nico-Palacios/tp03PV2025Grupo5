@@ -71,13 +71,8 @@ body {
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgb(8, 102, 243);
   }
-  
-
   p {
     font-size: 16px;
-  }
-  
-  p {
     background-color: rgb(0, 0, 0);
     font-weight: bold;
     color: #ffffff;

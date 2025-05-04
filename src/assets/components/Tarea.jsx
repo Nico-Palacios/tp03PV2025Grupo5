@@ -42,10 +42,12 @@ export const Tarea = () => {
                       <button onClick={ ()=> subrayar(tarea) }>Realizada</button>
                       <button onClick={ ()=> borrar(tarea.id) }>Eliminar</button>
                       <div>
+                         Nombre de la tarea:
                         <p 
                          className={tarea.realizada ? 'realizado' : ''}
                          >
-                        Nombre de la tarea: {tarea.nombre}&nbsp;</p>    
+                         {tarea.nombre}&nbsp;</p>
+
                         Descripcion de la tarea: {tarea.descrip}&nbsp;
                         Fecha: {tarea.fecha}&nbsp;
                         Id: {tarea.id}&nbsp;

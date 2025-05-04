@@ -1,3 +1,4 @@
+import '../css/Tarea.css'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 export const Tarea = () => {
@@ -41,12 +42,12 @@ export const Tarea = () => {
                       <button onClick={ ()=> subrayar(tarea) }>Realizada</button>
                       <button onClick={ ()=> borrar(tarea.id) }>Eliminar</button>
                       <div>
+                         Nombre de la tarea:
                         <p 
-                          style={{
-                          textDecoration: tarea.realizada ? 'line-through' : 'none',
-                          }}
-                        >
-                        Nombre de la tarea: {tarea.nombre}&nbsp;</p>    
+                         className={tarea.realizada ? 'realizado' : ''}
+                         >
+                         {tarea.nombre}&nbsp;</p>
+
                         Descripcion de la tarea: {tarea.descrip}&nbsp;
                         Fecha: {tarea.fecha}&nbsp;
                         Id: {tarea.id}&nbsp;

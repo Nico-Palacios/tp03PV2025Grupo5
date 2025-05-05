@@ -1,5 +1,5 @@
-//import React from 'react'
-
+import '../css/Producto.css'
+import { useState } from 'react'
 export const Productos = () => {
   let arreglo = [];
   function agregar() {
@@ -70,14 +70,14 @@ export const Productos = () => {
   
   return (
     <>
-      <h1>Menu de Productos</h1>
+      <h1 id="tit">Menu de Productos </h1>
       <input type="text" placeholder='Tipo de Producto' id='producto' />
       <input type="number" placeholder='Precio' id='precio' />
-      <button onClick={ agregar }>Agregar Producto</button>
-      <button onClick={ filtrar }>Filtrar</button>
-      <button onClick={ iva }>IVA</button>
-      <button onClick={ ordenar }>Ordenar Precios</button>
-      <button onClick={ eliminar } >Eliminar</button>
+      <button onClick={ agregar } id="but">Agregar Producto</button>
+      <button onClick={ filtrar } id="but">Filtrar</button>
+      <button onClick={ iva } id="but">IVA</button>
+      <button onClick={ ordenar } id="but">Ordenar Precios</button>
+      <button onClick={ eliminar } id="buto">Eliminar</button>
       <div id='lista'></div>
     </>
   )

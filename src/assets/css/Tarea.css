@@ -52,11 +52,7 @@ body {
     color: rgb(255, 255, 255);
   }
   
-  button:nth-of-type(2) {
-    background-color: #640912;
-    color: white;
-  }
-  
+
  
   ul {
     list-style-type: none;
